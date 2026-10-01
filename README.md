@@ -27,7 +27,6 @@ Plain Russian or English schedules → cron, RRULE and systemd.<br>
 "every weekday at 9:30" → `30 9 * * 1-5`
 
 <a href="https://www.npmjs.com/package/cronsense"><img src="https://img.shields.io/npm/v/cronsense?style=flat-square&color=0e7c66"></a>
-<a href="https://www.npmjs.com/package/cronsense"><img src="https://img.shields.io/npm/dm/cronsense?style=flat-square&color=0e7c66"></a>
 <a href="https://github.com/MrProLopstar/cronsense"><img src="https://img.shields.io/github/stars/MrProLopstar/cronsense?style=flat-square&color=0e7c66"></a>
 <br><a href="https://mrprolopstar.github.io/cronsense/">▶ Playground</a>
 
@@ -39,7 +38,6 @@ Offline Russian production calendar: workdays, holidays, hour norms.<br>
 Publishes itself to npm when a new year is approved.
 
 <a href="https://www.npmjs.com/package/prodcalendar"><img src="https://img.shields.io/npm/v/prodcalendar?style=flat-square&color=0e7c66"></a>
-<a href="https://www.npmjs.com/package/prodcalendar"><img src="https://img.shields.io/npm/dm/prodcalendar?style=flat-square&color=0e7c66"></a>
 <a href="https://github.com/MrProLopstar/prodcalendar"><img src="https://img.shields.io/github/stars/MrProLopstar/prodcalendar?style=flat-square&color=0e7c66"></a>
 
 </td>
