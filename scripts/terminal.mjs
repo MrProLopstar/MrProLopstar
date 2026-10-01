@@ -115,9 +115,26 @@ const render = (lang, s) => {
   const infoX = PAD + logo.reduce((max, row) => Math.max(max, row.length), 0) * ART_CHAR + 30;
   const infoTop = top + 4 * LINE;
   const start = time;
+  const eyeRows = logo.flatMap((row, index) => (row.some((cell) => cell[2]) ? [index] : []));
+  const lidRow = eyeRows[Math.floor(eyeRows.length / 2)];
+  const noise = '@%#*+=-:.';
+  const art = [];
   logo.forEach((row, index) => {
-    body.push(show(`<text x="${PAD}" y="${top + index * ART_LINE}" font-size="${ART_FONT}">${row.map(([ch, color]) => (color ? `<tspan fill="${color}">${escape(ch)}</tspan>` : '\u00a0')).join('')}</text>`, start + index * 0.03));
+    const at = start + index * 0.03;
+    const rowY = top + index * ART_LINE;
+    const cells = row.map(([ch, color, eye]) => (!color ? '\u00a0' : `<tspan fill="${color}"${eye ? ' class="eye"' : ''}>${escape(ch)}</tspan>`)).join('');
+    const scrambled = row.map(([, color]) => (color ? noise[Math.floor(Math.random() * noise.length)] : '\u00a0')).join('');
+    const scrambleName = `s${id++}`;
+    css.push(`.${scrambleName}{opacity:0;animation:on 0s ${at.toFixed(2)}s forwards,off 0s ${(at + 0.35).toFixed(2)}s forwards}`);
+    art.push(`<text class="${scrambleName}" x="${PAD}" y="${rowY}" font-size="${ART_FONT}" fill="${C.accent}">${escape(scrambled)}</text>`);
+    art.push(show(`<text x="${PAD}" y="${rowY}" font-size="${ART_FONT}">${cells}</text>`, at + 0.35));
+    if (eyeRows.includes(index)) {
+      const lid = row.map(([, , eye]) => (eye ? (index === lidRow ? '-' : '\u00a0') : '\u00a0')).join('');
+      art.push(`<text class="lid" x="${PAD}" y="${rowY}" font-size="${ART_FONT}" fill="#5a3a36">${lid}</text>`);
+    }
   });
+  css.push(`.breathe{animation:breathe 3.2s ease-in-out ${(start + logo.length * 0.03 + 0.4).toFixed(2)}s infinite}`);
+  body.push(`<g class="breathe">${art.join('')}</g>`);
   const info = [
     `<tspan fill="${C.accent}" font-weight="bold">mrprolopstar</tspan><tspan fill="${C.text}">@</tspan><tspan fill="${C.accent}" font-weight="bold">github</tspan>`,
     `<tspan fill="${C.muted}">${'-'.repeat(19)}</tspan>`,
@@ -138,7 +155,7 @@ const render = (lang, s) => {
   const height = y + 30;
   const date = new Date().toISOString().slice(0, 10);
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" font-family="Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="${FONT}">
-<style>@keyframes on{to{opacity:1}}@keyframes blink{50%{opacity:0}}.cursor{animation:blink 1s step-end infinite}${css.join('')}</style>
+<style>@keyframes on{to{opacity:1}}@keyframes blink{50%{opacity:0}}.cursor{animation:blink 1s step-end infinite}@keyframes off{to{opacity:0}}@keyframes breathe{50%{transform:translateY(-2px)}}@keyframes shut{0%,94%,100%{opacity:1}95%,98%{opacity:0}}@keyframes lid{0%,94%,100%{opacity:0}95%,98%{opacity:1}}.eye{animation:shut 4.5s infinite}.lid{opacity:0;animation:lid 4.5s infinite}${css.join('')}</style>
 <rect width="${width}" height="${height}" rx="10" fill="${C.bg}" stroke="#30363d"/>
 <path d="M0 10a10 10 0 0 1 10-10h${width - 20}a10 10 0 0 1 10 10v22H0z" fill="${C.bar}"/>
 <circle cx="20" cy="16" r="6" fill="#f85149"/><circle cx="40" cy="16" r="6" fill="#e3b341"/><circle cx="60" cy="16" r="6" fill="#3fb950"/>
