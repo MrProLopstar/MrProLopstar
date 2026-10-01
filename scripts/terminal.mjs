@@ -4,6 +4,14 @@ const USER = 'MrProLopstar';
 const PACKAGES = ['cronsense', 'prodcalendar'];
 const OUT = process.argv[2] ?? 'dist';
 
+const age = (birthday) => {
+  const [year, month, day] = birthday.split('-').map(Number);
+  const now = new Date();
+  return now.getUTCFullYear() - year - (now.getUTCMonth() + 1 < month || (now.getUTCMonth() + 1 === month && now.getUTCDate() < day) ? 1 : 0);
+};
+const AGE = process.env.BIRTHDAY ? age(process.env.BIRTHDAY) : 22;
+const years = (n) => (n % 10 === 1 && n % 100 !== 11 ? 'год' : n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 'года' : 'лет');
+
 const json = async (url) => {
   const headers = { 'user-agent': USER };
   if (url.includes('api.github.com') && process.env.GITHUB_TOKEN) headers.authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
@@ -31,7 +39,7 @@ const TEXT = {
     whoami: 'Iaroslav Gostiaev, JavaScript developer from Saint Petersburg',
     rows: (s) => [
       ['Name', 'Iaroslav Gostiaev'],
-      ['Age', '22'],
+      ['Age', String(AGE)],
       ['Hometown', 'Saint Petersburg'],
       ['MSc', "ITMO, Software Engineering, Web Technologies '28"],
       ['BSc', "Ogarev Mordovia State University, Software Eng. '26"],
@@ -46,7 +54,7 @@ const TEXT = {
     whoami: 'Ярослав Гостяев, JavaScript-разработчик из Санкт-Петербурга',
     rows: (s) => [
       ['Имя', 'Гостяев Ярослав'],
-      ['Возраст', '22 года'],
+      ['Возраст', `${AGE} ${years(AGE)}`],
       ['Город', 'Санкт-Петербург'],
       ['Магистр', "ИТМО, Программная инженерия, Веб-технологии '28"],
       ['Бакалавр', "МГУ им. Н.П. Огарёва, Программная инженерия '26"],
