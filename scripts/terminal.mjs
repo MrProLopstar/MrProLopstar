@@ -1,4 +1,5 @@
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { divergence } from './divergence.mjs';
 
 const USER = 'MrProLopstar';
 const PACKAGES = ['cronsense', 'prodcalendar', 'phoneoperator', 'bankbik'];
@@ -180,4 +181,5 @@ const s = await stats().catch((error) => {
 mkdirSync(OUT, { recursive: true });
 writeFileSync(`${OUT}/terminal.svg`, render('en', s));
 writeFileSync(`${OUT}/terminal.ru.svg`, render('ru', s));
+writeFileSync(`${OUT}/divergence.svg`, divergence(s.downloads));
 console.log(s);

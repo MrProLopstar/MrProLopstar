@@ -16,6 +16,10 @@
   <img src="https://raw.githubusercontent.com/MrProLopstar/MrProLopstar/output/terminal.svg" alt="mrprolopstar@github: neofetch" width="100%">
 </p>
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/MrProLopstar/MrProLopstar/output/divergence.svg" alt="Divergence meter: npm downloads" width="70%">
+</p>
+
 ### 🛠 Projects
 
 <table>
