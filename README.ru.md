@@ -42,6 +42,30 @@
 
 </td>
 </tr>
+<tr>
+<td width="50%" valign="top">
+
+#### [phoneoperator](https://github.com/MrProLopstar/phoneoperator)
+Оператор и регион номера телефона, офлайн.<br>
+По официальному реестру нумерации, обновляется каждую неделю.
+
+<a href="https://www.npmjs.com/package/phoneoperator"><img src="https://img.shields.io/npm/v/phoneoperator?style=flat-square&color=0e7c66"></a>
+<a href="https://github.com/MrProLopstar/phoneoperator"><img src="https://img.shields.io/github/stars/MrProLopstar/phoneoperator?style=flat-square&color=0e7c66"></a>
+<br><a href="https://mrprolopstar.github.io/phoneoperator/">▶ Песочница</a>
+
+</td>
+<td width="50%" valign="top">
+
+#### [bankbik](https://github.com/MrProLopstar/bankbik)
+Справочник БИК Банка России офлайн<br>
+и проверка ИНН, СНИЛС, ОГРН и счетов.
+
+<a href="https://www.npmjs.com/package/bankbik"><img src="https://img.shields.io/npm/v/bankbik?style=flat-square&color=0e7c66"></a>
+<a href="https://github.com/MrProLopstar/bankbik"><img src="https://img.shields.io/github/stars/MrProLopstar/bankbik?style=flat-square&color=0e7c66"></a>
+<br><a href="https://mrprolopstar.github.io/bankbik/">▶ Песочница</a>
+
+</td>
+</tr>
 </table>
 
 ### ✍️ Статьи на Хабре

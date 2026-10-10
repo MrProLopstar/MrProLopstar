@@ -42,6 +42,30 @@ Publishes itself to npm when a new year is approved.
 
 </td>
 </tr>
+<tr>
+<td width="50%" valign="top">
+
+#### [phoneoperator](https://github.com/MrProLopstar/phoneoperator)
+Operator and region of a Russian phone number, offline.<br>
+From the official numbering registry, refreshed weekly.
+
+<a href="https://www.npmjs.com/package/phoneoperator"><img src="https://img.shields.io/npm/v/phoneoperator?style=flat-square&color=0e7c66"></a>
+<a href="https://github.com/MrProLopstar/phoneoperator"><img src="https://img.shields.io/github/stars/MrProLopstar/phoneoperator?style=flat-square&color=0e7c66"></a>
+<br><a href="https://mrprolopstar.github.io/phoneoperator/">▶ Playground</a>
+
+</td>
+<td width="50%" valign="top">
+
+#### [bankbik](https://github.com/MrProLopstar/bankbik)
+Bank of Russia BIK directory offline<br>
+and checks for INN, SNILS, OGRN and bank accounts.
+
+<a href="https://www.npmjs.com/package/bankbik"><img src="https://img.shields.io/npm/v/bankbik?style=flat-square&color=0e7c66"></a>
+<a href="https://github.com/MrProLopstar/bankbik"><img src="https://img.shields.io/github/stars/MrProLopstar/bankbik?style=flat-square&color=0e7c66"></a>
+<br><a href="https://mrprolopstar.github.io/bankbik/">▶ Playground</a>
+
+</td>
+</tr>
 </table>
 
 ### ✍️ Articles (Habr, in Russian)

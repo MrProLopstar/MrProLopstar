@@ -1,7 +1,7 @@
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 
 const USER = 'MrProLopstar';
-const PACKAGES = ['cronsense', 'prodcalendar'];
+const PACKAGES = ['cronsense', 'prodcalendar', 'phoneoperator', 'bankbik'];
 const OUT = process.argv[2] ?? 'dist';
 
 const age = (birthday) => {
@@ -44,7 +44,7 @@ const TEXT = {
       ['MSc', "ITMO, Software Engineering, Web Technologies '28"],
       ['BSc', "Ogarev Mordovia State University, Software Eng. '26"],
       ['Languages', 'JavaScript, TypeScript, Python, C++, C#, Flutter'],
-      ['Projects', 'cronsense, prodcalendar'],
+      ['Projects', PACKAGES.join(', ')],
       ['GitHub', `${s.repos} repos, ${s.stars} stars, ${s.followers} followers`],
       ['npm', s.downloads ? `${s.downloads} downloads last month` : `${PACKAGES.length} packages`],
     ],
@@ -59,7 +59,7 @@ const TEXT = {
       ['Магистр', "ИТМО, Программная инженерия, Веб-технологии '28"],
       ['Бакалавр', "МГУ им. Н.П. Огарёва, Программная инженерия '26"],
       ['Языки', 'JavaScript, TypeScript, Python, C++, C#, Flutter'],
-      ['Проекты', 'cronsense, prodcalendar'],
+      ['Проекты', PACKAGES.join(', ')],
       ['GitHub', `репозиториев ${s.repos}, звёзд ${s.stars}, подписчиков ${s.followers}`],
       ['npm', s.downloads ? `${s.downloads} скачиваний за месяц` : `${PACKAGES.length} пакета`],
     ],
