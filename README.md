@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="README.ru.md"><img src="https://img.shields.io/badge/%D0%9F%D0%BE--%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8-0e7c66?style=flat-square"></a>
-  <a href="https://habr.com/ru/articles/1089372/"><img src="https://img.shields.io/badge/Habr-2%20articles-65a3be?style=flat-square&logo=habr&logoColor=white"></a>
+  <!-- habr-badge:start --><a href="https://habr.com/ru/articles/1092758/"><img src="https://img.shields.io/badge/Habr-3%20articles-65a3be?style=flat-square&logo=habr&logoColor=white"></a><!-- habr-badge:end -->
   <img src="https://komarev.com/ghpvc/?username=MrProLopstar&style=flat-square&color=0e7c66&label=profile%20views">
 </p>
 
@@ -27,6 +27,7 @@ Plain Russian or English schedules → cron, RRULE and systemd.<br>
 "every weekday at 9:30" → `30 9 * * 1-5`
 
 <a href="https://www.npmjs.com/package/cronsense"><img src="https://img.shields.io/npm/v/cronsense?style=flat-square&color=0e7c66"></a>
+<a href="https://www.npmjs.com/package/cronsense"><img src="https://img.shields.io/npm/dm/cronsense?style=flat-square&color=0e7c66"></a>
 <a href="https://github.com/MrProLopstar/cronsense"><img src="https://img.shields.io/github/stars/MrProLopstar/cronsense?style=flat-square&color=0e7c66"></a>
 <br><a href="https://mrprolopstar.github.io/cronsense/">▶ Playground</a>
 
@@ -38,6 +39,7 @@ Offline Russian production calendar: workdays, holidays, hour norms.<br>
 Publishes itself to npm when a new year is approved.
 
 <a href="https://www.npmjs.com/package/prodcalendar"><img src="https://img.shields.io/npm/v/prodcalendar?style=flat-square&color=0e7c66"></a>
+<a href="https://www.npmjs.com/package/prodcalendar"><img src="https://img.shields.io/npm/dm/prodcalendar?style=flat-square&color=0e7c66"></a>
 <a href="https://github.com/MrProLopstar/prodcalendar"><img src="https://img.shields.io/github/stars/MrProLopstar/prodcalendar?style=flat-square&color=0e7c66"></a>
 
 </td>
@@ -50,6 +52,7 @@ Operator and region of a Russian phone number, offline.<br>
 From the official numbering registry, refreshed weekly.
 
 <a href="https://www.npmjs.com/package/phoneoperator"><img src="https://img.shields.io/npm/v/phoneoperator?style=flat-square&color=0e7c66"></a>
+<a href="https://www.npmjs.com/package/phoneoperator"><img src="https://img.shields.io/npm/dm/phoneoperator?style=flat-square&color=0e7c66"></a>
 <a href="https://github.com/MrProLopstar/phoneoperator"><img src="https://img.shields.io/github/stars/MrProLopstar/phoneoperator?style=flat-square&color=0e7c66"></a>
 <br><a href="https://mrprolopstar.github.io/phoneoperator/">▶ Playground</a>
 
@@ -61,6 +64,7 @@ Bank of Russia BIK directory offline<br>
 and checks for INN, SNILS, OGRN and bank accounts.
 
 <a href="https://www.npmjs.com/package/bankbik"><img src="https://img.shields.io/npm/v/bankbik?style=flat-square&color=0e7c66"></a>
+<a href="https://www.npmjs.com/package/bankbik"><img src="https://img.shields.io/npm/dm/bankbik?style=flat-square&color=0e7c66"></a>
 <a href="https://github.com/MrProLopstar/bankbik"><img src="https://img.shields.io/github/stars/MrProLopstar/bankbik?style=flat-square&color=0e7c66"></a>
 <br><a href="https://mrprolopstar.github.io/bankbik/">▶ Playground</a>
 
@@ -70,8 +74,11 @@ and checks for INN, SNILS, OGRN and bank accounts.
 
 ### ✍️ Articles (Habr, in Russian)
 
-- [«По будням в 9:30» → `30 9 * * 1-5`: a schedule parser that refuses to guess](https://habr.com/ru/articles/1087646/)
-- [The parser after Habr testing: «полвторого», RRULE, systemd and a production calendar](https://habr.com/ru/articles/1089372/)
+<!-- habr-list:start -->
+- [Чей номер и чей БИК: две офлайн-библиотеки на открытых реестрах Минцифры и ЦБ](https://habr.com/ru/articles/1092758/)
+- [Парсер расписаний после хабратестирования: полвторого, RRULE, systemd и производственный календарь](https://habr.com/ru/articles/1089372/)
+- [«По будням в 9:30» → 30 9 * * 1–5: парсер расписаний на русском, который отказывается угадывать](https://habr.com/ru/articles/1087646/)
+<!-- habr-list:end -->
 
 ### 🎓 Education
 
@@ -90,8 +97,8 @@ and checks for INN, SNILS, OGRN and bank accounts.
 </p>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MrProLopstar/MrProLopstar/output/snake-dark.svg">
-  <img alt="snake eating contributions" src="https://raw.githubusercontent.com/MrProLopstar/MrProLopstar/output/snake.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MrProLopstar/MrProLopstar/output/profile-3d-contrib/profile-night-green.svg">
+  <img alt="contribution calendar in 3D" src="https://raw.githubusercontent.com/MrProLopstar/MrProLopstar/output/profile-3d-contrib/profile-green-animate.svg">
 </picture>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=100&color=0:3fc6a4,100:0e7c66&section=footer" width="100%">

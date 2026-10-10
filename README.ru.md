@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="README.md"><img src="https://img.shields.io/badge/English-0e7c66?style=flat-square"></a>
-  <a href="https://habr.com/ru/articles/1089372/"><img src="https://img.shields.io/badge/%D0%A5%D0%B0%D0%B1%D1%80-2%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8-65a3be?style=flat-square&logo=habr&logoColor=white"></a>
+  <!-- habr-badge:start --><a href="https://habr.com/ru/articles/1092758/"><img src="https://img.shields.io/badge/%D0%A5%D0%B0%D0%B1%D1%80-3%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8-65a3be?style=flat-square&logo=habr&logoColor=white"></a><!-- habr-badge:end -->
   <img src="https://komarev.com/ghpvc/?username=MrProLopstar&style=flat-square&color=0e7c66&label=%D0%BF%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D1%8B">
 </p>
 
@@ -27,6 +27,7 @@
 «по будням в 9:30» → `30 9 * * 1-5`
 
 <a href="https://www.npmjs.com/package/cronsense"><img src="https://img.shields.io/npm/v/cronsense?style=flat-square&color=0e7c66"></a>
+<a href="https://www.npmjs.com/package/cronsense"><img src="https://img.shields.io/npm/dm/cronsense?style=flat-square&color=0e7c66"></a>
 <a href="https://github.com/MrProLopstar/cronsense"><img src="https://img.shields.io/github/stars/MrProLopstar/cronsense?style=flat-square&color=0e7c66"></a>
 <br><a href="https://mrprolopstar.github.io/cronsense/">▶ Песочница</a>
 
@@ -38,6 +39,7 @@
 Сам публикуется в npm, когда утверждают новый год.
 
 <a href="https://www.npmjs.com/package/prodcalendar"><img src="https://img.shields.io/npm/v/prodcalendar?style=flat-square&color=0e7c66"></a>
+<a href="https://www.npmjs.com/package/prodcalendar"><img src="https://img.shields.io/npm/dm/prodcalendar?style=flat-square&color=0e7c66"></a>
 <a href="https://github.com/MrProLopstar/prodcalendar"><img src="https://img.shields.io/github/stars/MrProLopstar/prodcalendar?style=flat-square&color=0e7c66"></a>
 
 </td>
@@ -50,6 +52,7 @@
 По официальному реестру нумерации, обновляется каждую неделю.
 
 <a href="https://www.npmjs.com/package/phoneoperator"><img src="https://img.shields.io/npm/v/phoneoperator?style=flat-square&color=0e7c66"></a>
+<a href="https://www.npmjs.com/package/phoneoperator"><img src="https://img.shields.io/npm/dm/phoneoperator?style=flat-square&color=0e7c66"></a>
 <a href="https://github.com/MrProLopstar/phoneoperator"><img src="https://img.shields.io/github/stars/MrProLopstar/phoneoperator?style=flat-square&color=0e7c66"></a>
 <br><a href="https://mrprolopstar.github.io/phoneoperator/">▶ Песочница</a>
 
@@ -61,6 +64,7 @@
 и проверка ИНН, СНИЛС, ОГРН и счетов.
 
 <a href="https://www.npmjs.com/package/bankbik"><img src="https://img.shields.io/npm/v/bankbik?style=flat-square&color=0e7c66"></a>
+<a href="https://www.npmjs.com/package/bankbik"><img src="https://img.shields.io/npm/dm/bankbik?style=flat-square&color=0e7c66"></a>
 <a href="https://github.com/MrProLopstar/bankbik"><img src="https://img.shields.io/github/stars/MrProLopstar/bankbik?style=flat-square&color=0e7c66"></a>
 <br><a href="https://mrprolopstar.github.io/bankbik/">▶ Песочница</a>
 
@@ -70,8 +74,11 @@
 
 ### ✍️ Статьи на Хабре
 
-- [«По будням в 9:30» → `30 9 * * 1-5`: парсер расписаний на русском, который отказывается угадывать](https://habr.com/ru/articles/1087646/)
+<!-- habr-list:start -->
+- [Чей номер и чей БИК: две офлайн-библиотеки на открытых реестрах Минцифры и ЦБ](https://habr.com/ru/articles/1092758/)
 - [Парсер расписаний после хабратестирования: полвторого, RRULE, systemd и производственный календарь](https://habr.com/ru/articles/1089372/)
+- [«По будням в 9:30» → 30 9 * * 1–5: парсер расписаний на русском, который отказывается угадывать](https://habr.com/ru/articles/1087646/)
+<!-- habr-list:end -->
 
 ### 🎓 Образование
 
@@ -90,8 +97,8 @@
 </p>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MrProLopstar/MrProLopstar/output/snake-dark.svg">
-  <img alt="змейка ест коммиты" src="https://raw.githubusercontent.com/MrProLopstar/MrProLopstar/output/snake.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MrProLopstar/MrProLopstar/output/profile-3d-contrib/profile-night-green.svg">
+  <img alt="календарь коммитов в 3D" src="https://raw.githubusercontent.com/MrProLopstar/MrProLopstar/output/profile-3d-contrib/profile-green-animate.svg">
 </picture>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=100&color=0:3fc6a4,100:0e7c66&section=footer" width="100%">
