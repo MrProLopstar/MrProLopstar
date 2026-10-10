@@ -21,11 +21,24 @@ const json = async (url) => {
   return response.json();
 };
 
+const FIRST_DAY = '2026-09-01';
+const day = (date) => date.toISOString().slice(0, 10);
+
+const allTime = async (name) => {
+  let downloads = 0;
+  const end = new Date();
+  for (let start = new Date(FIRST_DAY); start <= end; start = new Date(Date.UTC(start.getUTCFullYear(), start.getUTCMonth() + 17, 1))) {
+    const until = new Date(Math.min(end.getTime(), Date.UTC(start.getUTCFullYear(), start.getUTCMonth() + 17, 0)));
+    downloads += await json(`https://api.npmjs.org/downloads/point/${day(start)}:${day(until)}/${name}`).then((item) => item.downloads, () => 0);
+  }
+  return { downloads };
+};
+
 const stats = async () => {
   const [user, repos, ...downloads] = await Promise.all([
     json(`https://api.github.com/users/${USER}`),
     json(`https://api.github.com/users/${USER}/repos?per_page=100`),
-    ...PACKAGES.map((name) => json(`https://api.npmjs.org/downloads/point/last-month/${name}`).catch(() => ({ downloads: 0 }))),
+    ...PACKAGES.map((name) => allTime(name)),
   ]);
   return {
     repos: user.public_repos,
@@ -34,6 +47,8 @@ const stats = async () => {
     downloads: downloads.reduce((sum, item) => sum + item.downloads, 0),
   };
 };
+
+const downloadsWord = (n) => (n % 10 === 1 && n % 100 !== 11 ? 'скачивание' : n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 'скачивания' : 'скачиваний');
 
 const TEXT = {
   en: {
@@ -47,7 +62,7 @@ const TEXT = {
       ['Languages', 'JavaScript, TypeScript, Python, C++, C#, Flutter'],
       ['Projects', PACKAGES.join(', ')],
       ['GitHub', `${s.repos} repos, ${s.stars} stars, ${s.followers} followers`],
-      ['npm', s.downloads ? `${s.downloads} downloads last month` : `${PACKAGES.length} packages`],
+      ['npm', s.downloads ? `${s.downloads.toLocaleString('en-US')} downloads` : `${PACKAGES.length} packages`],
     ],
     updated: 'updated',
   },
@@ -62,7 +77,7 @@ const TEXT = {
       ['Языки', 'JavaScript, TypeScript, Python, C++, C#, Flutter'],
       ['Проекты', PACKAGES.join(', ')],
       ['GitHub', `репозиториев ${s.repos}, звёзд ${s.stars}, подписчиков ${s.followers}`],
-      ['npm', s.downloads ? `${s.downloads} скачиваний за месяц` : `${PACKAGES.length} пакета`],
+      ['npm', s.downloads ? `${s.downloads.toLocaleString('ru-RU')} ${downloadsWord(s.downloads)}` : `${PACKAGES.length} пакета`],
     ],
     updated: 'обновлено',
   },
