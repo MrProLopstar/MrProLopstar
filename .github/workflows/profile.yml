@@ -13,8 +13,8 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
           node-version: 24
       - run: node scripts/terminal.mjs dist
@@ -27,7 +27,7 @@ jobs:
           outputs: |
             dist/snake.svg?color_snake=#0e7c66&color_dots=#ebedf0,#c6e9df,#7fd3bb,#3fc6a4,#0e7c66
             dist/snake-dark.svg?palette=github-dark&color_snake=#3fc6a4&color_dots=#161b22,#173229,#1f5c4b,#2c9278,#3fc6a4
-      - uses: crazy-max/ghaction-github-pages@v4
+      - uses: crazy-max/ghaction-github-pages@v5
         with:
           target_branch: output
           build_dir: dist
