@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="744" height="302" viewBox="0 0 744 302">
+<defs>
+<pattern id="mesh" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path d="M0 3.5h7M3.5 0v7" stroke="#7a5f40" stroke-width="0.7"/></pattern>
+<linearGradient id="glassFill" x1="0" x2="1"><stop offset="0" stop-color="#2a2018" stop-opacity="0.95"/><stop offset="0.5" stop-color="#191109" stop-opacity="0.9"/><stop offset="1" stop-color="#2a2018" stop-opacity="0.95"/></linearGradient>
+<linearGradient id="cylinder" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity="0.55"/><stop offset="0.25" stop-color="#000" stop-opacity="0"/><stop offset="0.75" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.6"/></linearGradient>
+<linearGradient id="rim" x1="0" x2="1"><stop offset="0" stop-color="#8d7a63"/><stop offset="0.5" stop-color="#3b3026"/><stop offset="1" stop-color="#6d5c49"/></linearGradient>
+<linearGradient id="shine" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.28"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<linearGradient id="socket" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5a4128"/><stop offset="0.45" stop-color="#2b1d10"/><stop offset="1" stop-color="#120b05"/></linearGradient>
+<linearGradient id="wood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a2f1a"/><stop offset="0.12" stop-color="#3a2414"/><stop offset="1" stop-color="#1c1009"/></linearGradient>
+<linearGradient id="brass" x1="0" x2="1"><stop offset="0" stop-color="#6e5530"/><stop offset="0.5" stop-color="#c9a764"/><stop offset="1" stop-color="#6e5530"/></linearGradient>
+<radialGradient id="screw"><stop offset="0" stop-color="#e2c78c"/><stop offset="1" stop-color="#5c4527"/></radialGradient>
+<radialGradient id="spill"><stop offset="0" stop-color="#ff9a3c" stop-opacity="0.75"/><stop offset="1" stop-color="#ff9a3c" stop-opacity="0"/></radialGradient>
+<pattern id="grain" width="120" height="8" patternUnits="userSpaceOnUse"><path d="M0 2 Q30 0 60 3 T120 2 M0 6 Q40 5 80 7 T120 6" stroke="#000" stroke-opacity="0.18" fill="none"/></pattern>
+<filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.2" result="a"/><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="a"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<style>
+.d{font-family:'Noto Serif','DejaVu Serif',Georgia,serif;font-weight:400;font-size:108px;text-anchor:middle;fill:#ffd08a;stroke:#ff8a1f;stroke-width:1.6;filter:url(#glow);opacity:0;animation-duration:12s;animation-iteration-count:infinite;animation-timing-function:step-end}
+.g{font-family:'Noto Serif','DejaVu Serif',Georgia,serif;font-weight:400;font-size:108px;text-anchor:middle;fill:none;stroke:#6b5236;stroke-width:1.1;opacity:0.45}
+.dot{fill:#ffd08a;stroke:#ff8a1f;filter:url(#glow)}
+.plate{font:600 13px Consolas,'DejaVu Sans Mono',monospace;letter-spacing:3px;fill:#2a1c0c;text-anchor:middle}
+.sub{font:12px Consolas,'DejaVu Sans Mono',monospace;fill:#c9a764;text-anchor:middle;opacity:0.85}
+@keyframes flicker{0%,100%{opacity:1}47%{opacity:1}49%{opacity:0.78}51%{opacity:1}73%{opacity:0.92}74%{opacity:1}}
+.tubes{animation:flicker 4.3s infinite}
+@keyframes f0_0{0%,0.00%{opacity:0}0.00%,1.83%{opacity:1}1.83%,100%{opacity:0}}@keyframes f0_1{0%,1.83%{opacity:0}1.83%,3.67%{opacity:1}3.67%,100%{opacity:0}}@keyframes f0_2{0%,3.67%{opacity:0}3.67%,5.50%{opacity:1}5.50%,100%{opacity:0}}@keyframes f0_3{0%,5.50%{opacity:0}5.50%,7.33%{opacity:1}7.33%,100%{opacity:0}}@keyframes f0_4{0%,7.33%{opacity:0}7.33%,9.17%{opacity:1}9.17%,100%{opacity:0}}@keyframes f0_5{0%,9.17%{opacity:0}9.17%,11.00%{opacity:1}11.00%,100%{opacity:0}}@keyframes f0_6{0%,11.00%{opacity:0}11.00%,12.83%{opacity:1}12.83%,100%{opacity:0}}@keyframes f0_7{0%,12.83%{opacity:0}12.83%,14.67%{opacity:1}14.67%,100%{opacity:0}}@keyframes f0_8{0%,14.67%{opacity:0}14.67%,16.50%{opacity:1}16.50%,100%{opacity:0}}@keyframes f0_9{0%,16.50%{opacity:0}16.50%,18.33%{opacity:1}18.33%,100%{opacity:0}}@keyframes s0{0%,18.33%{opacity:0}18.33%,97.00%{opacity:1}97.00%,100%{opacity:0}}@keyframes f1_0{0%,0.00%{opacity:0}0.00%,2.00%{opacity:1}2.00%,100%{opacity:0}}@keyframes f1_1{0%,2.00%{opacity:0}2.00%,4.00%{opacity:1}4.00%,100%{opacity:0}}@keyframes f1_2{0%,4.00%{opacity:0}4.00%,6.00%{opacity:1}6.00%,100%{opacity:0}}@keyframes f1_3{0%,6.00%{opacity:0}6.00%,8.00%{opacity:1}8.00%,100%{opacity:0}}@keyframes f1_4{0%,8.00%{opacity:0}8.00%,10.00%{opacity:1}10.00%,100%{opacity:0}}@keyframes f1_5{0%,10.00%{opacity:0}10.00%,12.00%{opacity:1}12.00%,100%{opacity:0}}@keyframes f1_6{0%,12.00%{opacity:0}12.00%,14.00%{opacity:1}14.00%,100%{opacity:0}}@keyframes f1_7{0%,14.00%{opacity:0}14.00%,16.00%{opacity:1}16.00%,100%{opacity:0}}@keyframes f1_8{0%,16.00%{opacity:0}16.00%,18.00%{opacity:1}18.00%,100%{opacity:0}}@keyframes f1_9{0%,18.00%{opacity:0}18.00%,20.00%{opacity:1}20.00%,100%{opacity:0}}@keyframes s1{0%,20.00%{opacity:0}20.00%,97.00%{opacity:1}97.00%,100%{opacity:0}}@keyframes f2_0{0%,0.00%{opacity:0}0.00%,2.17%{opacity:1}2.17%,100%{opacity:0}}@keyframes f2_1{0%,2.17%{opacity:0}2.17%,4.33%{opacity:1}4.33%,100%{opacity:0}}@keyframes f2_2{0%,4.33%{opacity:0}4.33%,6.50%{opacity:1}6.50%,100%{opacity:0}}@keyframes f2_3{0%,6.50%{opacity:0}6.50%,8.67%{opacity:1}8.67%,100%{opacity:0}}@keyframes f2_4{0%,8.67%{opacity:0}8.67%,10.83%{opacity:1}10.83%,100%{opacity:0}}@keyframes f2_5{0%,10.83%{opacity:0}10.83%,13.00%{opacity:1}13.00%,100%{opacity:0}}@keyframes f2_6{0%,13.00%{opacity:0}13.00%,15.17%{opacity:1}15.17%,100%{opacity:0}}@keyframes f2_7{0%,15.17%{opacity:0}15.17%,17.33%{opacity:1}17.33%,100%{opacity:0}}@keyframes f2_8{0%,17.33%{opacity:0}17.33%,19.50%{opacity:1}19.50%,100%{opacity:0}}@keyframes f2_9{0%,19.50%{opacity:0}19.50%,21.67%{opacity:1}21.67%,100%{opacity:0}}@keyframes s2{0%,21.67%{opacity:0}21.67%,97.00%{opacity:1}97.00%,100%{opacity:0}}@keyframes f3_0{0%,0.00%{opacity:0}0.00%,2.33%{opacity:1}2.33%,100%{opacity:0}}@keyframes f3_1{0%,2.33%{opacity:0}2.33%,4.67%{opacity:1}4.67%,100%{opacity:0}}@keyframes f3_2{0%,4.67%{opacity:0}4.67%,7.00%{opacity:1}7.00%,100%{opacity:0}}@keyframes f3_3{0%,7.00%{opacity:0}7.00%,9.33%{opacity:1}9.33%,100%{opacity:0}}@keyframes f3_4{0%,9.33%{opacity:0}9.33%,11.67%{opacity:1}11.67%,100%{opacity:0}}@keyframes f3_5{0%,11.67%{opacity:0}11.67%,14.00%{opacity:1}14.00%,100%{opacity:0}}@keyframes f3_6{0%,14.00%{opacity:0}14.00%,16.33%{opacity:1}16.33%,100%{opacity:0}}@keyframes f3_7{0%,16.33%{opacity:0}16.33%,18.67%{opacity:1}18.67%,100%{opacity:0}}@keyframes f3_8{0%,18.67%{opacity:0}18.67%,21.00%{opacity:1}21.00%,100%{opacity:0}}@keyframes f3_9{0%,21.00%{opacity:0}21.00%,23.33%{opacity:1}23.33%,100%{opacity:0}}@keyframes s3{0%,23.33%{opacity:0}23.33%,97.00%{opacity:1}97.00%,100%{opacity:0}}@keyframes f4_0{0%,0.00%{opacity:0}0.00%,2.50%{opacity:1}2.50%,100%{opacity:0}}@keyframes f4_1{0%,2.50%{opacity:0}2.50%,5.00%{opacity:1}5.00%,100%{opacity:0}}@keyframes f4_2{0%,5.00%{opacity:0}5.00%,7.50%{opacity:1}7.50%,100%{opacity:0}}@keyframes f4_3{0%,7.50%{opacity:0}7.50%,10.00%{opacity:1}10.00%,100%{opacity:0}}@keyframes f4_4{0%,10.00%{opacity:0}10.00%,12.50%{opacity:1}12.50%,100%{opacity:0}}@keyframes f4_5{0%,12.50%{opacity:0}12.50%,15.00%{opacity:1}15.00%,100%{opacity:0}}@keyframes f4_6{0%,15.00%{opacity:0}15.00%,17.50%{opacity:1}17.50%,100%{opacity:0}}@keyframes f4_7{0%,17.50%{opacity:0}17.50%,20.00%{opacity:1}20.00%,100%{opacity:0}}@keyframes f4_8{0%,20.00%{opacity:0}20.00%,22.50%{opacity:1}22.50%,100%{opacity:0}}@keyframes f4_9{0%,22.50%{opacity:0}22.50%,25.00%{opacity:1}25.00%,100%{opacity:0}}@keyframes s4{0%,25.00%{opacity:0}25.00%,97.00%{opacity:1}97.00%,100%{opacity:0}}@keyframes f5_0{0%,0.00%{opacity:0}0.00%,2.67%{opacity:1}2.67%,100%{opacity:0}}@keyframes f5_1{0%,2.67%{opacity:0}2.67%,5.33%{opacity:1}5.33%,100%{opacity:0}}@keyframes f5_2{0%,5.33%{opacity:0}5.33%,8.00%{opacity:1}8.00%,100%{opacity:0}}@keyframes f5_3{0%,8.00%{opacity:0}8.00%,10.67%{opacity:1}10.67%,100%{opacity:0}}@keyframes f5_4{0%,10.67%{opacity:0}10.67%,13.33%{opacity:1}13.33%,100%{opacity:0}}@keyframes f5_5{0%,13.33%{opacity:0}13.33%,16.00%{opacity:1}16.00%,100%{opacity:0}}@keyframes f5_6{0%,16.00%{opacity:0}16.00%,18.67%{opacity:1}18.67%,100%{opacity:0}}@keyframes f5_7{0%,18.67%{opacity:0}18.67%,21.33%{opacity:1}21.33%,100%{opacity:0}}@keyframes f5_8{0%,21.33%{opacity:0}21.33%,24.00%{opacity:1}24.00%,100%{opacity:0}}@keyframes f5_9{0%,24.00%{opacity:0}24.00%,26.67%{opacity:1}26.67%,100%{opacity:0}}@keyframes s5{0%,26.67%{opacity:0}26.67%,97.00%{opacity:1}97.00%,100%{opacity:0}}@keyframes f6_0{0%,0.00%{opacity:0}0.00%,2.83%{opacity:1}2.83%,100%{opacity:0}}@keyframes f6_1{0%,2.83%{opacity:0}2.83%,5.67%{opacity:1}5.67%,100%{opacity:0}}@keyframes f6_2{0%,5.67%{opacity:0}5.67%,8.50%{opacity:1}8.50%,100%{opacity:0}}@keyframes f6_3{0%,8.50%{opacity:0}8.50%,11.33%{opacity:1}11.33%,100%{opacity:0}}@keyframes f6_4{0%,11.33%{opacity:0}11.33%,14.17%{opacity:1}14.17%,100%{opacity:0}}@keyframes f6_5{0%,14.17%{opacity:0}14.17%,17.00%{opacity:1}17.00%,100%{opacity:0}}@keyframes f6_6{0%,17.00%{opacity:0}17.00%,19.83%{opacity:1}19.83%,100%{opacity:0}}@keyframes f6_7{0%,19.83%{opacity:0}19.83%,22.67%{opacity:1}22.67%,100%{opacity:0}}@keyframes f6_8{0%,22.67%{opacity:0}22.67%,25.50%{opacity:1}25.50%,100%{opacity:0}}@keyframes f6_9{0%,25.50%{opacity:0}25.50%,28.33%{opacity:1}28.33%,100%{opacity:0}}@keyframes s6{0%,28.33%{opacity:0}28.33%,97.00%{opacity:1}97.00%,100%{opacity:0}}
+</style>
+<rect x="6" y="214" width="732" height="74" rx="10" fill="url(#wood)"/>
+<rect x="6" y="214" width="732" height="74" rx="10" fill="url(#grain)"/>
+<rect x="6" y="214" width="732" height="3" rx="1.5" fill="#d9b779" opacity="0.25"/>
+<rect x="222" y="230" width="300" height="24" rx="4" fill="url(#brass)"/>
+<text x="372" y="246.5" class="plate">DIVERGENCE METER</text>
+<text x="372" y="274" class="sub">980 npm downloads · 1.048596 is Steins;Gate</text>
+<circle cx="17" cy="232" r="5" fill="url(#screw)"/><path d="M13.5 232 H20.5" stroke="#2a1e12" stroke-width="1.4" transform="rotate(171 17 232)"/><circle cx="17" cy="272" r="5" fill="url(#screw)"/><path d="M13.5 272 H20.5" stroke="#2a1e12" stroke-width="1.4" transform="rotate(31 17 272)"/><circle cx="727" cy="232" r="5" fill="url(#screw)"/><path d="M723.5 232 H730.5" stroke="#2a1e12" stroke-width="1.4" transform="rotate(101 727 232)"/><circle cx="727" cy="272" r="5" fill="url(#screw)"/><path d="M723.5 272 H730.5" stroke="#2a1e12" stroke-width="1.4" transform="rotate(141 727 272)"/>
+<g class="tubes"><g>
+<ellipse cx="73" cy="228" rx="47" ry="9" fill="url(#spill)" opacity="0.9" class="spill"/>
+<path d="M34 194 V65 A39 39 0 0 1 112 65 V194 Z" fill="url(#glassFill)"/>
+<clipPath id="c34"><path d="M34 194 V65 A39 39 0 0 1 112 65 V194 Z"/></clipPath>
+<g clip-path="url(#c34)">
+<rect x="34" y="26" width="78" height="168" fill="url(#mesh)" opacity="0.45"/>
+<text x="73" y="150.32" class="g">1</text><text x="73" y="150.32" class="g">4</text><text x="73" y="150.32" class="g">8</text><text x="73" y="150.32" class="g">9</text><text x="73" y="150.32" class="d" style="animation-name:f0_0">3</text><text x="73" y="150.32" class="d" style="animation-name:f0_1">0</text><text x="73" y="150.32" class="d" style="animation-name:f0_2">7</text><text x="73" y="150.32" class="d" style="animation-name:f0_3">4</text><text x="73" y="150.32" class="d" style="animation-name:f0_4">1</text><text x="73" y="150.32" class="d" style="animation-name:f0_5">8</text><text x="73" y="150.32" class="d" style="animation-name:f0_6">5</text><text x="73" y="150.32" class="d" style="animation-name:f0_7">2</text><text x="73" y="150.32" class="d" style="animation-name:f0_8">9</text><text x="73" y="150.32" class="d" style="animation-name:f0_9">6</text><text x="73" y="150.32" class="d" style="animation-name:s0">0</text>
+<rect x="34" y="26" width="78" height="168" fill="url(#cylinder)"/>
+</g>
+<path d="M34 194 V65 A39 39 0 0 1 112 65 V194 Z" fill="none" stroke="url(#rim)" stroke-width="1.6"/>
+<rect x="44.92" y="47.45" width="7.800000000000001" height="132.9" rx="3.9000000000000004" fill="url(#shine)"/>
+<path d="M69 27 Q73 17 77 27 Z" fill="url(#rim)" opacity="0.8"/>
+<rect x="30" y="192" width="86" height="26" rx="5" fill="url(#socket)"/>
+<rect x="30" y="192" width="86" height="4" rx="2" fill="#d9b779" opacity="0.35"/>
+</g>
+<g>
+<ellipse cx="147" cy="228" rx="25" ry="9" fill="url(#spill)" opacity="0.6" class="spill"/>
+<path d="M130 194 V43 A17 17 0 0 1 164 43 V194 Z" fill="url(#glassFill)"/>
+<clipPath id="c130"><path d="M130 194 V43 A17 17 0 0 1 164 43 V194 Z"/></clipPath>
+<g clip-path="url(#c130)">
+<rect x="130" y="26" width="34" height="168" fill="url(#mesh)" opacity="0.45"/>
+<circle cx="147" cy="143.6" r="7" class="dot"/>
+<rect x="130" y="26" width="34" height="168" fill="url(#cylinder)"/>
+</g>
+<path d="M130 194 V43 A17 17 0 0 1 164 43 V194 Z" fill="none" stroke="url(#rim)" stroke-width="1.6"/>
+<rect x="134.76" y="35.35" width="3.4000000000000004" height="152.7" rx="1.7000000000000002" fill="url(#shine)"/>
+<path d="M143 27 Q147 17 151 27 Z" fill="url(#rim)" opacity="0.8"/>
+<rect x="126" y="192" width="42" height="26" rx="5" fill="url(#socket)"/>
+<rect x="126" y="192" width="42" height="4" rx="2" fill="#d9b779" opacity="0.35"/>
+</g>
+<g>
+<ellipse cx="221" cy="228" rx="47" ry="9" fill="url(#spill)" opacity="0.9" class="spill"/>
+<path d="M182 194 V65 A39 39 0 0 1 260 65 V194 Z" fill="url(#glassFill)"/>
+<clipPath id="c182"><path d="M182 194 V65 A39 39 0 0 1 260 65 V194 Z"/></clipPath>
+<g clip-path="url(#c182)">
+<rect x="182" y="26" width="78" height="168" fill="url(#mesh)" opacity="0.45"/>
+<text x="221" y="150.32" class="g">1</text><text x="221" y="150.32" class="g">4</text><text x="221" y="150.32" class="g">8</text><text x="221" y="150.32" class="g">9</text><text x="221" y="150.32" class="d" style="animation-name:f1_0">6</text><text x="221" y="150.32" class="d" style="animation-name:f1_1">3</text><text x="221" y="150.32" class="d" style="animation-name:f1_2">0</text><text x="221" y="150.32" class="d" style="animation-name:f1_3">7</text><text x="221" y="150.32" class="d" style="animation-name:f1_4">4</text><text x="221" y="150.32" class="d" style="animation-name:f1_5">1</text><text x="221" y="150.32" class="d" style="animation-name:f1_6">8</text><text x="221" y="150.32" class="d" style="animation-name:f1_7">5</text><text x="221" y="150.32" class="d" style="animation-name:f1_8">2</text><text x="221" y="150.32" class="d" style="animation-name:f1_9">9</text><text x="221" y="150.32" class="d" style="animation-name:s1">0</text>
+<rect x="182" y="26" width="78" height="168" fill="url(#cylinder)"/>
+</g>
+<path d="M182 194 V65 A39 39 0 0 1 260 65 V194 Z" fill="none" stroke="url(#rim)" stroke-width="1.6"/>
+<rect x="192.92000000000002" y="47.45" width="7.800000000000001" height="132.9" rx="3.9000000000000004" fill="url(#shine)"/>
+<path d="M217 27 Q221 17 225 27 Z" fill="url(#rim)" opacity="0.8"/>
+<rect x="178" y="192" width="86" height="26" rx="5" fill="url(#socket)"/>
+<rect x="178" y="192" width="86" height="4" rx="2" fill="#d9b779" opacity="0.35"/>
+</g>
+<g>
+<ellipse cx="311" cy="228" rx="47" ry="9" fill="url(#spill)" opacity="0.9" class="spill"/>
+<path d="M272 194 V65 A39 39 0 0 1 350 65 V194 Z" fill="url(#glassFill)"/>
+<clipPath id="c272"><path d="M272 194 V65 A39 39 0 0 1 350 65 V194 Z"/></clipPath>
+<g clip-path="url(#c272)">
+<rect x="272" y="26" width="78" height="168" fill="url(#mesh)" opacity="0.45"/>
+<text x="311" y="150.32" class="g">1</text><text x="311" y="150.32" class="g">4</text><text x="311" y="150.32" class="g">8</text><text x="311" y="150.32" class="g">9</text><text x="311" y="150.32" class="d" style="animation-name:f2_0">9</text><text x="311" y="150.32" class="d" style="animation-name:f2_1">6</text><text x="311" y="150.32" class="d" style="animation-name:f2_2">3</text><text x="311" y="150.32" class="d" style="animation-name:f2_3">0</text><text x="311" y="150.32" class="d" style="animation-name:f2_4">7</text><text x="311" y="150.32" class="d" style="animation-name:f2_5">4</text><text x="311" y="150.32" class="d" style="animation-name:f2_6">1</text><text x="311" y="150.32" class="d" style="animation-name:f2_7">8</text><text x="311" y="150.32" class="d" style="animation-name:f2_8">5</text><text x="311" y="150.32" class="d" style="animation-name:f2_9">2</text><text x="311" y="150.32" class="d" style="animation-name:s2">0</text>
+<rect x="272" y="26" width="78" height="168" fill="url(#cylinder)"/>
+</g>
+<path d="M272 194 V65 A39 39 0 0 1 350 65 V194 Z" fill="none" stroke="url(#rim)" stroke-width="1.6"/>
+<rect x="282.92" y="47.45" width="7.800000000000001" height="132.9" rx="3.9000000000000004" fill="url(#shine)"/>
+<path d="M307 27 Q311 17 315 27 Z" fill="url(#rim)" opacity="0.8"/>
+<rect x="268" y="192" width="86" height="26" rx="5" fill="url(#socket)"/>
+<rect x="268" y="192" width="86" height="4" rx="2" fill="#d9b779" opacity="0.35"/>
+</g>
+<g>
+<ellipse cx="401" cy="228" rx="47" ry="9" fill="url(#spill)" opacity="0.9" class="spill"/>
+<path d="M362 194 V65 A39 39 0 0 1 440 65 V194 Z" fill="url(#glassFill)"/>
+<clipPath id="c362"><path d="M362 194 V65 A39 39 0 0 1 440 65 V194 Z"/></clipPath>
+<g clip-path="url(#c362)">
+<rect x="362" y="26" width="78" height="168" fill="url(#mesh)" opacity="0.45"/>
+<text x="401" y="150.32" class="g">1</text><text x="401" y="150.32" class="g">4</text><text x="401" y="150.32" class="g">8</text><text x="401" y="150.32" class="g">9</text><text x="401" y="150.32" class="d" style="animation-name:f3_0">2</text><text x="401" y="150.32" class="d" style="animation-name:f3_1">9</text><text x="401" y="150.32" class="d" style="animation-name:f3_2">6</text><text x="401" y="150.32" class="d" style="animation-name:f3_3">3</text><text x="401" y="150.32" class="d" style="animation-name:f3_4">0</text><text x="401" y="150.32" class="d" style="animation-name:f3_5">7</text><text x="401" y="150.32" class="d" style="animation-name:f3_6">4</text><text x="401" y="150.32" class="d" style="animation-name:f3_7">1</text><text x="401" y="150.32" class="d" style="animation-name:f3_8">8</text><text x="401" y="150.32" class="d" style="animation-name:f3_9">5</text><text x="401" y="150.32" class="d" style="animation-name:s3">0</text>
+<rect x="362" y="26" width="78" height="168" fill="url(#cylinder)"/>
+</g>
+<path d="M362 194 V65 A39 39 0 0 1 440 65 V194 Z" fill="none" stroke="url(#rim)" stroke-width="1.6"/>
+<rect x="372.92" y="47.45" width="7.800000000000001" height="132.9" rx="3.9000000000000004" fill="url(#shine)"/>
+<path d="M397 27 Q401 17 405 27 Z" fill="url(#rim)" opacity="0.8"/>
+<rect x="358" y="192" width="86" height="26" rx="5" fill="url(#socket)"/>
+<rect x="358" y="192" width="86" height="4" rx="2" fill="#d9b779" opacity="0.35"/>
+</g>
+<g>
+<ellipse cx="491" cy="228" rx="47" ry="9" fill="url(#spill)" opacity="0.9" class="spill"/>
+<path d="M452 194 V65 A39 39 0 0 1 530 65 V194 Z" fill="url(#glassFill)"/>
+<clipPath id="c452"><path d="M452 194 V65 A39 39 0 0 1 530 65 V194 Z"/></clipPath>
+<g clip-path="url(#c452)">
+<rect x="452" y="26" width="78" height="168" fill="url(#mesh)" opacity="0.45"/>
+<text x="491" y="150.32" class="g">0</text><text x="491" y="150.32" class="g">1</text><text x="491" y="150.32" class="g">4</text><text x="491" y="150.32" class="g">8</text><text x="491" y="150.32" class="d" style="animation-name:f4_0">4</text><text x="491" y="150.32" class="d" style="animation-name:f4_1">1</text><text x="491" y="150.32" class="d" style="animation-name:f4_2">8</text><text x="491" y="150.32" class="d" style="animation-name:f4_3">5</text><text x="491" y="150.32" class="d" style="animation-name:f4_4">2</text><text x="491" y="150.32" class="d" style="animation-name:f4_5">9</text><text x="491" y="150.32" class="d" style="animation-name:f4_6">6</text><text x="491" y="150.32" class="d" style="animation-name:f4_7">3</text><text x="491" y="150.32" class="d" style="animation-name:f4_8">0</text><text x="491" y="150.32" class="d" style="animation-name:f4_9">7</text><text x="491" y="150.32" class="d" style="animation-name:s4">9</text>
+<rect x="452" y="26" width="78" height="168" fill="url(#cylinder)"/>
+</g>
+<path d="M452 194 V65 A39 39 0 0 1 530 65 V194 Z" fill="none" stroke="url(#rim)" stroke-width="1.6"/>
+<rect x="462.92" y="47.45" width="7.800000000000001" height="132.9" rx="3.9000000000000004" fill="url(#shine)"/>
+<path d="M487 27 Q491 17 495 27 Z" fill="url(#rim)" opacity="0.8"/>
+<rect x="448" y="192" width="86" height="26" rx="5" fill="url(#socket)"/>
+<rect x="448" y="192" width="86" height="4" rx="2" fill="#d9b779" opacity="0.35"/>
+</g>
+<g>
+<ellipse cx="581" cy="228" rx="47" ry="9" fill="url(#spill)" opacity="0.9" class="spill"/>
+<path d="M542 194 V65 A39 39 0 0 1 620 65 V194 Z" fill="url(#glassFill)"/>
+<clipPath id="c542"><path d="M542 194 V65 A39 39 0 0 1 620 65 V194 Z"/></clipPath>
+<g clip-path="url(#c542)">
+<rect x="542" y="26" width="78" height="168" fill="url(#mesh)" opacity="0.45"/>
+<text x="581" y="150.32" class="g">0</text><text x="581" y="150.32" class="g">1</text><text x="581" y="150.32" class="g">4</text><text x="581" y="150.32" class="g">9</text><text x="581" y="150.32" class="d" style="animation-name:f5_0">6</text><text x="581" y="150.32" class="d" style="animation-name:f5_1">3</text><text x="581" y="150.32" class="d" style="animation-name:f5_2">0</text><text x="581" y="150.32" class="d" style="animation-name:f5_3">7</text><text x="581" y="150.32" class="d" style="animation-name:f5_4">4</text><text x="581" y="150.32" class="d" style="animation-name:f5_5">1</text><text x="581" y="150.32" class="d" style="animation-name:f5_6">8</text><text x="581" y="150.32" class="d" style="animation-name:f5_7">5</text><text x="581" y="150.32" class="d" style="animation-name:f5_8">2</text><text x="581" y="150.32" class="d" style="animation-name:f5_9">9</text><text x="581" y="150.32" class="d" style="animation-name:s5">8</text>
+<rect x="542" y="26" width="78" height="168" fill="url(#cylinder)"/>
+</g>
+<path d="M542 194 V65 A39 39 0 0 1 620 65 V194 Z" fill="none" stroke="url(#rim)" stroke-width="1.6"/>
+<rect x="552.92" y="47.45" width="7.800000000000001" height="132.9" rx="3.9000000000000004" fill="url(#shine)"/>
+<path d="M577 27 Q581 17 585 27 Z" fill="url(#rim)" opacity="0.8"/>
+<rect x="538" y="192" width="86" height="26" rx="5" fill="url(#socket)"/>
+<rect x="538" y="192" width="86" height="4" rx="2" fill="#d9b779" opacity="0.35"/>
+</g>
+<g>
+<ellipse cx="671" cy="228" rx="47" ry="9" fill="url(#spill)" opacity="0.9" class="spill"/>
+<path d="M632 194 V65 A39 39 0 0 1 710 65 V194 Z" fill="url(#glassFill)"/>
+<clipPath id="c632"><path d="M632 194 V65 A39 39 0 0 1 710 65 V194 Z"/></clipPath>
+<g clip-path="url(#c632)">
+<rect x="632" y="26" width="78" height="168" fill="url(#mesh)" opacity="0.45"/>
+<text x="671" y="150.32" class="g">1</text><text x="671" y="150.32" class="g">4</text><text x="671" y="150.32" class="g">8</text><text x="671" y="150.32" class="g">9</text><text x="671" y="150.32" class="d" style="animation-name:f6_0">1</text><text x="671" y="150.32" class="d" style="animation-name:f6_1">8</text><text x="671" y="150.32" class="d" style="animation-name:f6_2">5</text><text x="671" y="150.32" class="d" style="animation-name:f6_3">2</text><text x="671" y="150.32" class="d" style="animation-name:f6_4">9</text><text x="671" y="150.32" class="d" style="animation-name:f6_5">6</text><text x="671" y="150.32" class="d" style="animation-name:f6_6">3</text><text x="671" y="150.32" class="d" style="animation-name:f6_7">0</text><text x="671" y="150.32" class="d" style="animation-name:f6_8">7</text><text x="671" y="150.32" class="d" style="animation-name:f6_9">4</text><text x="671" y="150.32" class="d" style="animation-name:s6">0</text>
+<rect x="632" y="26" width="78" height="168" fill="url(#cylinder)"/>
+</g>
+<path d="M632 194 V65 A39 39 0 0 1 710 65 V194 Z" fill="none" stroke="url(#rim)" stroke-width="1.6"/>
+<rect x="642.92" y="47.45" width="7.800000000000001" height="132.9" rx="3.9000000000000004" fill="url(#shine)"/>
+<path d="M667 27 Q671 17 675 27 Z" fill="url(#rim)" opacity="0.8"/>
+<rect x="628" y="192" width="86" height="26" rx="5" fill="url(#socket)"/>
+<rect x="628" y="192" width="86" height="4" rx="2" fill="#d9b779" opacity="0.35"/>
+</g></g>
+</svg>
