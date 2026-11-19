@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="README.md"><img src="https://img.shields.io/badge/English-0e7c66?style=flat-square"></a>
-  <!-- habr-badge:start --><a href="https://habr.com/ru/articles/1092758/"><img src="https://img.shields.io/badge/%D0%A5%D0%B0%D0%B1%D1%80-3%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8-65a3be?style=flat-square&logo=habr&logoColor=white"></a><!-- habr-badge:end -->
+  <!-- habr-badge:start --><a href="https://habr.com/ru/articles/1109626/"><img src="https://img.shields.io/badge/%D0%A5%D0%B0%D0%B1%D1%80-4%20%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8-65a3be?style=flat-square&logo=habr&logoColor=white"></a><!-- habr-badge:end -->
   <img src="https://komarev.com/ghpvc/?username=MrProLopstar&style=flat-square&color=0e7c66&label=%D0%BF%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D1%8B">
 </p>
 
@@ -79,6 +79,7 @@
 ### ✍️ Статьи на Хабре
 
 <!-- habr-list:start -->
+- [Карманный сэнсэй: как заставить мини-читалку на ESP32 учить вас японскому](https://habr.com/ru/articles/1109626/)
 - [Чей номер и чей БИК: две офлайн-библиотеки на открытых реестрах Минцифры и ЦБ](https://habr.com/ru/articles/1092758/)
 - [Парсер расписаний после хабратестирования: полвторого, RRULE, systemd и производственный календарь](https://habr.com/ru/articles/1089372/)
 - [«По будням в 9:30» → 30 9 * * 1–5: парсер расписаний на русском, который отказывается угадывать](https://habr.com/ru/articles/1087646/)

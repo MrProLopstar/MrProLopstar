@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="README.ru.md"><img src="https://img.shields.io/badge/%D0%9F%D0%BE--%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8-0e7c66?style=flat-square"></a>
-  <!-- habr-badge:start --><a href="https://habr.com/ru/articles/1092758/"><img src="https://img.shields.io/badge/Habr-3%20articles-65a3be?style=flat-square&logo=habr&logoColor=white"></a><!-- habr-badge:end -->
+  <!-- habr-badge:start --><a href="https://habr.com/ru/articles/1109626/"><img src="https://img.shields.io/badge/Habr-4%20articles-65a3be?style=flat-square&logo=habr&logoColor=white"></a><!-- habr-badge:end -->
   <img src="https://komarev.com/ghpvc/?username=MrProLopstar&style=flat-square&color=0e7c66&label=profile%20views">
 </p>
 
@@ -79,6 +79,7 @@ and checks for INN, SNILS, OGRN and bank accounts.
 ### ✍️ Articles (Habr, in Russian)
 
 <!-- habr-list:start -->
+- [Карманный сэнсэй: как заставить мини-читалку на ESP32 учить вас японскому](https://habr.com/ru/articles/1109626/)
 - [Чей номер и чей БИК: две офлайн-библиотеки на открытых реестрах Минцифры и ЦБ](https://habr.com/ru/articles/1092758/)
 - [Парсер расписаний после хабратестирования: полвторого, RRULE, systemd и производственный календарь](https://habr.com/ru/articles/1089372/)
 - [«По будням в 9:30» → 30 9 * * 1–5: парсер расписаний на русском, который отказывается угадывать](https://habr.com/ru/articles/1087646/)
